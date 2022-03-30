@@ -1,4 +1,5 @@
 import * as C from './App.styles'
+import { InforItem } from './components/InfoItem'
 
 const App = () =>{
   return(
@@ -10,7 +11,8 @@ const App = () =>{
           </C.LogoLink>
           
           <C.InfoArea>
-            Thiago
+            <InforItem label='Tempo' value='00:00'/>
+            <InforItem label='Movimentos' value='0'/>
           </C.InfoArea>
 
           <button>Reniciar</button>

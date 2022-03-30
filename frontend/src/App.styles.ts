@@ -27,4 +27,6 @@ export const GridArea = styles.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+
+  background-color: red;
 `;
