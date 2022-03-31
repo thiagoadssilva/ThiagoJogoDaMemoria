@@ -15,9 +15,11 @@ export const Container = styles.div`
 
 export const Label = styles.div`
   font-size: 15px;
-  color: ;
+  color: #6a7d8b;
 `;
 
 export const Value = styles.div`
-
+  font-size: 37px;
+  font-weight: bold;
+  color: #101c40;
 `;

@@ -28,5 +28,9 @@ export const GridArea = styles.div`
   display: flex;
   justify-content: flex-end;
 
-  background-color: red;
+  @media (max-width: 750px){
+    justify-content: center;
+    margin: 0 20px;
+  }
+
 `;
