@@ -32,5 +32,11 @@ export const GridArea = styles.div`
     justify-content: center;
     margin: 0 20px;
   }
+`;
 
+export const Grid = styles.div`
+  width: 430px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 `;
