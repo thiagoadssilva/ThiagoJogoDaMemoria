@@ -6,6 +6,8 @@ import { InforItem } from './components/InfoItem'
 import RestartIcon from './svgs/restart.svg';
 import { GridItemType } from './types/GridItemType';
 
+import {Items} from './data/items'
+
 const App = () =>{
   const [playing, setPlaying] = useState<boolean>(false);
   const [timeElapsed, setTimeElapsed] = useState<number>(0);
@@ -16,6 +18,23 @@ const App = () =>{
   useEffect(() => handleResetAndCreateGrid())
 
   const handleResetAndCreateGrid = () =>{
+    setTimeElapsed(0)
+    setMoveCount(0)
+    setShownCount(0)
+    
+    let tmpGrid: GridItemType[] = []
+
+    for(let i=0; i < (Items.length * 2); i++){
+      tmpGrid.push({
+        item: null,
+        shown: false,
+        permanentShown: false
+      })
+    }
+
+    setGridItems(tmpGrid)
+
+    setPlaying(true)
 
   }
 
