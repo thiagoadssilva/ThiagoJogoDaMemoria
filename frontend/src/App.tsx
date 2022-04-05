@@ -7,6 +7,7 @@ import RestartIcon from './svgs/restart.svg';
 import { GridItemType } from './types/GridItemType';
 
 import {Items} from './data/items'
+import { GridItem } from './components/GridItem';
 
 const App = () =>{
   const [playing, setPlaying] = useState<boolean>(false);
@@ -48,6 +49,10 @@ const App = () =>{
 
   }
 
+  const handleItemClick = (index: number) =>{
+
+  }
+
   return(
     <div>
       <C.Container>
@@ -66,7 +71,15 @@ const App = () =>{
         </C.Info>
         <C.GridArea>
           <C.Grid>
+            {gridItems.map((item, index) =>(
+              <GridItem 
+                key={index}
+                item={item}
+                onClick={() => handleItemClick(index)} 
+              />
+            ))}
             
+
           </C.Grid>
         </C.GridArea>
       </C.Container>
