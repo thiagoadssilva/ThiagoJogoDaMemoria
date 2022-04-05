@@ -32,6 +32,16 @@ const App = () =>{
       })
     }
 
+    for(let w = 0; w < 2; w++){
+      for(let i = 0; i < Items.length; i++){
+        let pos = -1
+        while(pos < 0 || tmpGrid[pos].item !== null){
+          pos = Math.floor(Math.random() * (Items.length * 2))
+        }
+        tmpGrid[pos].item = i
+      }
+    }
+
     setGridItems(tmpGrid)
 
     setPlaying(true)
