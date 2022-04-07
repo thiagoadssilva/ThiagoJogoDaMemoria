@@ -2,10 +2,11 @@ import styles from 'styled-components'
 
 export const Container = styles.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: 920px;
   margin: auto;
   display: flex;
   padding: 50px 0;
+  
 `;
 
 export const Info = styles.div`

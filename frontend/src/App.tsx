@@ -16,7 +16,7 @@ const App = () =>{
   const [shownCount, setShownCount] = useState<number>(0);
   const [gridItems, setGridItems] = useState<GridItemType[]>([]);
 
-  useEffect(() => handleResetAndCreateGrid())
+  useEffect(() => handleResetAndCreateGrid(), [])
 
   const handleResetAndCreateGrid = () =>{
     setTimeElapsed(0)
@@ -29,7 +29,7 @@ const App = () =>{
       tmpGrid.push({
         item: null,
         shown: false,
-        permanentShown: true
+        permanentShown: false
       })
     }
 
