@@ -11,7 +11,7 @@ type Props ={
 
 export const GridItem = ({item, onClick}: Props) =>{
   return(
-    <C.Container onClick={onClick}>
+    <C.Container onClick={onClick} showBackground={item.permanentShown || item.shown}>
       {item.permanentShown === false && item.shown === false &&
         <C.Icon src={b7Svg} alt=''/>
       }

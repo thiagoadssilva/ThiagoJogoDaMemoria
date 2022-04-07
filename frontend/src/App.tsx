@@ -29,7 +29,7 @@ const App = () =>{
       tmpGrid.push({
         item: null,
         shown: false,
-        permanentShown: false
+        permanentShown: true
       })
     }
 
