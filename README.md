@@ -7,7 +7,7 @@
 
 ### Dentro do <b>README</b> da pasta do projeto está tudo que foi ou está sendo usando:
 
-hhttps://github.com/thiagoadssilva/ThiagoJogoDaMemoria/blob/main/frontend/README.md
+https://github.com/thiagoadssilva/ThiagoJogoDaMemoria/blob/main/frontend/README.md
 
 <hr>
 
