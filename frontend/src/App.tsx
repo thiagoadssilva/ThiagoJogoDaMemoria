@@ -132,8 +132,6 @@ const App = () =>{
                 onClick={() => handleItemClick(index)} 
               />
             ))}
-            
-
           </C.Grid>
         </C.GridArea>
       </C.Container>

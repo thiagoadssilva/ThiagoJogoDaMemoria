@@ -7,11 +7,11 @@
 
 ### Dentro do <b>README</b> da pasta do projeto está tudo que foi ou está sendo usando:
 
-https://github.com/thiagoadssilva/ThiagoCalculandoImc/blob/main/frontend/README.md
+hhttps://github.com/thiagoadssilva/ThiagoJogoDaMemoria/blob/main/frontend/README.md
 
 <hr>
 
-## Projeto Publicado: http://imc.tfcoder.com/
+## Projeto Publicado: https://jogodamemoria.tfcoder.com/
 
 <hr>
 
