@@ -2,10 +2,14 @@ import styles from 'styled-components'
 
 export const Container = styles.div`
   width: 100%;
-  max-width: 920px;
+  max-width: 750px;
   margin: auto;
   display: flex;
   padding: 50px 0;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
   
 `;
 
@@ -13,6 +17,11 @@ export const Info = styles.div`
   display: flex;
   flex-direction: column;
   width: auto;
+
+  @media (max-width: 750px) {
+    margin-bottom: 50px;
+    align-items: center;
+  }
 `;
 
 export const LogoLink = styles.a`
@@ -22,6 +31,12 @@ export const LogoLink = styles.a`
 export const InfoArea = styles.div`
   width: 100%;
   margin: 10px 0;
+
+  @media (max-width: 750px) {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
 `;
 
 export const GridArea = styles.div`
@@ -29,10 +44,10 @@ export const GridArea = styles.div`
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     justify-content: center;
     margin: 0 20px;
-  }
+}
 `;
 
 export const Grid = styles.div`
@@ -40,4 +55,8 @@ export const Grid = styles.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+
+  @media(max-width: 750px){
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
